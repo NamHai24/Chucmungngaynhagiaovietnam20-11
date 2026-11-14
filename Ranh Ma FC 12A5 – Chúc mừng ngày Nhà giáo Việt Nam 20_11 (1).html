@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ranh Ma FC 12A5 – Chúc mừng ngày Nhà giáo Việt Nam 20/11</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐱%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#fff5ef;--card:#ffffff;--ink:#3b2f36;--mute:#8a7a82;--line:#f0dcd6;--grid:#f6e8e2;--axis:#b9a3a8;--acc:#ff7a9a;--chip:#fff0f3;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101524;--card:#1a2036;--ink:#eef0fa;--mute:#98a0bc;--line:#2b3350;--grid:#222a44;--axis:#6c7596;--acc:#ff8fab;--chip:#232b47;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101524;--card:#1a2036;--ink:#eef0fa;--mute:#98a0bc;--line:#2b3350;--grid:#222a44;--axis:#6c7596;--acc:#ff8fab;--chip:#232b47;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito","Quicksand","Segoe UI",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:14px}
+header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+header h1{font-size:clamp(1.1rem,3.6vw,1.8rem);line-height:1.25;margin:0;flex:1}
+header p{margin:2px 0 0;font-size:.85rem;color:var(--mute);font-weight:500}
+.brand{display:inline-block;background:var(--acc);color:#fff;font-weight:800;font-size:.9rem;padding:2px 14px;border-radius:999px;margin-bottom:6px;letter-spacing:.02em}
+footer{text-align:center;margin:18px 0 6px;font-weight:800;color:var(--acc);font-size:1rem}
+.cats{display:flex;align-items:flex-end;gap:2px;flex:none}
+.main{display:grid;grid-template-columns:1fr 380px;gap:14px;align-items:start}
+@media (max-width:900px){.main{grid-template-columns:1fr}}
+.card{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:14px;position:relative}
+.gwrap{position:relative;border-radius:14px;overflow:hidden;border:2px solid var(--line);background:var(--card)}
+canvas{display:block;width:100%;height:min(58vh,560px);min-height:300px;touch-action:none;cursor:crosshair}
+#readout{position:absolute;left:8px;top:8px;background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:3px 9px;font-size:.78rem;pointer-events:none;display:none}
+.zoom{position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:6px}
+.zoom button{width:36px;height:36px;padding:0;font-size:1.1rem;border-radius:12px}
+button{font:inherit;font-weight:700;color:var(--ink);background:var(--chip);border:2px solid var(--line);border-radius:999px;padding:6px 13px;cursor:pointer;font-size:.88rem}
+button:hover{border-color:var(--acc)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:1px}
+button.pri{background:var(--acc);border-color:var(--acc);color:#fff}
+h2{font-size:1.05rem;margin:0 0 8px}
+.lbl{font-size:.82rem;color:var(--mute);margin:10px 0 6px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.row{display:flex;align-items:center;gap:6px;border:2px solid var(--line);border-radius:14px;padding:3px 6px;margin-bottom:6px;background:var(--card)}
+.row.act{border-color:var(--acc)}.row.bad{border-color:#e03131}
+.n{flex:none;width:26px;height:26px;padding:0;border-radius:50%;border:2px solid var(--c);background:var(--c);color:#fff;font-size:.7rem}
+.n.off{background:transparent;color:var(--c)}
+.row input{flex:1;min-width:0;font:inherit;font-size:1rem;font-family:ui-monospace,Menlo,monospace;border:0;background:transparent;color:var(--ink);padding:7px 2px}
+.x{flex:none;border:0;background:transparent;padding:2px 6px;color:var(--mute)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.two input,.sl{width:100%}
+input[type=number]{font:inherit;font-size:1rem;padding:8px 10px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+input[type=range]{accent-color:var(--acc);width:100%}
+.slrow{display:grid;grid-template-columns:auto 1fr 3.2em;gap:8px;align-items:center;font-weight:700}
+.chk{display:flex;gap:8px;align-items:center;margin-top:10px;font-weight:600;font-size:.9rem}
+.chk input{width:18px;height:18px;accent-color:var(--acc)}
+.mascot{display:flex;gap:10px;align-items:flex-start;margin-top:14px}
+.bubble{flex:1;background:var(--chip);border:2px solid var(--line);border-radius:16px;padding:10px 12px;font-size:.88rem;position:relative}
+.bubble b{font-weight:800}
+.bubble p{margin:2px 0}
+.bubble .say{color:var(--acc);font-weight:800;margin-bottom:4px}
+.chips button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.formula{font-size:1.25rem;font-weight:800;color:var(--acc);margin:12px 0 4px}
+#lbody ul{margin:6px 0;padding-left:20px;font-size:.92rem}#lbody li{margin:3px 0}
+.live{background:var(--chip);border:2px dashed var(--line);border-radius:14px;padding:8px 12px;margin-top:10px;font-weight:600;font-size:.9rem}.live p{margin:3px 0}
+.peek{position:absolute;right:16px;top:-34px;pointer-events:none}
+.tip{font-size:.8rem;color:var(--mute);margin-top:12px}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 4.5s infinite}
+@media (prefers-reduced-motion:reduce){.eye{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div><div class="brand">🐾 Ranh Ma FC · 12A5</div><h1>Chúc mừng ngày Nhà giáo Việt Nam 20/11 🐾</h1><p>Ranh Ma FC – 12A5 gửi đến thầy Thanh lời chúc 20/11 từ trái tim 💐</p></div>
+  <div class="cats" id="cats"></div>
+</header>
+<div class="main">
+  <section>
+    <div class="gwrap">
+      <canvas id="cv" role="img" aria-label="Đồ thị hàm số"></canvas>
+      <div id="readout"></div>
+      <div class="zoom"><button id="zin" aria-label="Phóng to">+</button><button id="zout" aria-label="Thu nhỏ">−</button><button id="fit" aria-label="Về mặc định">⌂</button></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h2>Học đồ thị hàm số 📚</h2>
+      <div class="chips" id="lchips"></div>
+      <div id="lbody"><p class="tip">Chọn một bài học để xem đồ thị, lời giải thích và các đặc điểm thay đổi theo thanh trượt.</p></div>
+      <div class="lbl">Thanh trượt tham số (a, b, c dùng được trong mọi công thức)</div>
+      <div class="slrow"><span>a</span><input class="sl" type="range" id="sa" min="-5" max="5" step="0.1" value="1"><span id="va">1</span></div>
+      <div class="slrow"><span>b</span><input class="sl" type="range" id="sb" min="-5" max="5" step="0.1" value="1"><span id="vb">1</span></div>
+      <div class="slrow"><span>c</span><input class="sl" type="range" id="sc" min="-5" max="5" step="0.1" value="0"><span id="vc">0</span></div>
+      <div style="margin-top:8px"><button id="anim">▶ Cho a chạy</button></div>
+      <div class="live" id="live" style="display:none"></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h2>Phân tích nhanh</h2>
+      <div class="mascot"><div id="mascot"></div><div class="bubble"><div class="say" id="say">Meo! Chạm lên đồ thị để mình đo điểm nè.</div><div id="ana"></div></div></div>
+    </div>
+  </section>
+  <aside>
+    <div class="card"><div class="peek" id="peek"></div>
+      <h2>Nhập hàm số</h2>
+      <div id="list"></div>
+      <div class="lbl">Hàm số mẫu</div>
+      <div class="chips" id="chips"></div>
+      <div class="lbl">Khoảng hiển thị trục X</div>
+      <div class="two"><input type="number" id="xmin" step="any" aria-label="X nhỏ nhất"><input type="number" id="xmax" step="any" aria-label="X lớn nhất"></div>
+      <div style="margin-top:8px"><button id="setr" style="width:100%">Cập nhật khoảng nhìn</button></div>
+      <label class="chk"><input type="checkbox" id="dchk"> Hiện đạo hàm và tiếp tuyến</label>
+      <p class="tip">Cú pháp: <b>y=sin(x)</b>, <b>x=2</b>, <b>(cos(t), sin(t))</b>. Giới hạn miền bằng <b>{-3&lt;=x&lt;=3}</b>. Dùng * để nhân, ^ để lũy thừa; hỗ trợ sin cos tan sqrt abs log exp pi. Kéo đồ thị để di chuyển, cuộn hoặc chụm để thu phóng.</p>
+    </div>
+  </aside>
+</div>
+<footer>🐾 Ranh Ma FC · 12A5 🐾</footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const cv=$('cv'),ctx=cv.getContext('2d'),list=$('list');
+function cat(c,e,s){return '<svg viewBox="0 0 64 56" width="'+s+'" height="'+Math.round(s*56/64)+'" aria-hidden="true"><g stroke="rgba(0,0,0,.18)" stroke-width="1"><path d="M10 24 L14 4 L28 14Z M54 24 L50 4 L36 14Z" fill="'+c+'"/><ellipse cx="32" cy="34" rx="25" ry="20" fill="'+c+'"/></g><path d="M14 10 L16 18 L22 14Z M50 10 L48 18 L42 14Z" fill="#ffb3c1"/><g class="eye"><ellipse cx="22" cy="32" rx="3" ry="4" fill="'+e+'"/><ellipse cx="42" cy="32" rx="3" ry="4" fill="'+e+'"/><circle cx="23" cy="30.5" r="1.1" fill="#fff"/><circle cx="43" cy="30.5" r="1.1" fill="#fff"/></g><path d="M30 38 h4 l-2 2.6z" fill="#ff7b95"/><path d="M32 40.6 v2 M32 42.6 q-3 3 -6 0 M32 42.6 q3 3 6 0" stroke="'+e+'" stroke-width="1.4" fill="none" stroke-linecap="round"/><circle cx="14" cy="39" r="4" fill="#ff9fb2" opacity=".5"/><circle cx="50" cy="39" r="4" fill="#ff9fb2" opacity=".5"/><path d="M5 36 h10 M5 42 l9 -2 M59 36 h-10 M59 42 l-9 -2" stroke="'+e+'" stroke-width="1" opacity=".45"/></svg>'}
+$('cats').innerHTML=cat('#ffb066','#3b2f36',54)+cat('#c3c9d9','#3b2f36',46)+cat('#fffaf3','#3b2f36',50);
+$('mascot').innerHTML=cat('#f0b87a','#3b2f36',58);
+$('peek').innerHTML=cat('#8f98b3','#fff',52);
+
+const PAL=['#e4572e','#e4572e','#e4572e','#f3a712','#f3a712','#29a19c','#4c6ef5','#4c6ef5','#4c6ef5','#a05195','#a05195','#a05195'];
+const EXTRA=['#2f9e44','#d6336c','#1c7ed6','#f08c00','#7048e8'];
+const PRESET=['y=3.5+1.5*sqrt(1-(x+7)^2) {-8<=x<=-6}','y=1.75*(x+8) {-8<=x<=-6}','y=0 {-8<=x<=-6}','y=2.5+2.5*sqrt(1-((x+3.8)/1.2)^2) {-5<=x<=-2.6}','y=2.5-2.5*sqrt(1-((x+3.8)/1.2)^2) {-5<=x<=-2.6}','y=(5/1.4)*(x+1.2) {-1.2<=x<=0.2}','x=2.6 {0<=y<=5}','y=5+(x-2.6) {1.8<=x<=2.6}','y=0 {1.8<=x<=3.4}','x=5.6 {0<=y<=5}','y=5+(x-5.6) {4.8<=x<=5.6}','y=0 {4.8<=x<=6.4}'];
+const SAMPLES=[['Số 20/11',PRESET,19,-.5,2.5],['Bậc hai',['y=x^2-4*x+3'],12,2,1],['Bậc ba',['y=x^3-3*x'],10,0,0],['Phân thức',['y=(x+1)/(x-2)'],14,2,0],['Căn thức',['y=sqrt(x)'],12,4,2],['Sin(x)',['y=sin(x)'],14,0,0],['|x|',['y=abs(x)'],10,0,2],['a·sin(bx)',['y=a*sin(b*x)'],14,0,0],['Parabol a',['y=a*x^2-2'],10,0,0],['Đường tròn',['(3*cos(t), 3*sin(t))'],12,0,0],['Trái tim',['(16*sin(t)^3, 13*cos(t)-5*cos(2*t)-2*cos(3*t)-cos(4*t)) {0<=t<=2*pi}'],46,0,0]];
+const LET=[
+['#e4572e',['x=0 {0<=y<=5}','y=5 {0<=x<=1.6}','(1.6+1.25*cos(t), 3.75+1.25*sin(t)) {-pi/2<=t<=pi/2}','y=2.5 {0<=x<=1.6}','y=2.5-1.5625*(x-1.4) {1.4<=x<=3}']],
+['#f3a712',['(5+1.5*cos(t), 1.5+1.5*sin(t)) {0<=t<=2*pi}','x=6.5 {0<=y<=3}']],
+['#29a19c',['x=7.5 {0<=y<=3}','(8.9+1.4*cos(t), 1.8+1.2*sin(t)) {0<=t<=pi}','x=10.3 {0<=y<=1.8}']],
+['#4c6ef5',['x=11.3 {0<=y<=5}','(12.7+1.4*cos(t), 1.8+1.2*sin(t)) {0<=t<=pi}','x=14.1 {0<=y<=1.8}']],
+['#a05195',['x=15.6 {0<=y<=5}','y=5-1.9444*(x-15.6) {15.6<=x<=17.4}','y=1.5+1.9444*(x-17.4) {17.4<=x<=19.2}','x=19.2 {0<=y<=5}']],
+['#d6336c',['(21.7+1.5*cos(t), 1.5+1.5*sin(t)) {0<=t<=2*pi}','x=23.2 {0<=y<=3}']],
+['#2f9e44',['x=24.7 {0<=y<=5}','y=5 {24.7<=x<=27.5}','y=2.7 {24.7<=x<=26.8}']],
+['#1c7ed6',['(30.2+1.8*cos(t), 2.5+2.5*sin(t)) {0.6<=t<=2*pi-0.6}']]];
+SAMPLES.splice(1,0,['Ranh Ma FC',LET.flatMap(l=>l[1]),35,16,2.5,LET.flatMap(l=>l[1].map(()=>l[0]))]);
+let rows=[],P=1,raf=0,view={cx:0,cy:0,s:40},A=1,B=1,C=0,LS=null,active=0,trace=null,VW=1,VH=1,tm=0,ar=0;
+
+function js(s){return String(s).replace(/\^/g,'**').replace(/(\d)(?=[a-z(])/gi,'$1*').replace(/\)(?=[\da-z(])/gi,')*').replace(/\bln\b/g,'log').replace(/\b(sin|cos|tan|asin|acos|atan|sqrt|abs|log|exp|floor|ceil|sign|pow|min|max)\b/g,'Math.$1').replace(/\bpi\b/gi,'Math.PI').replace(/\be\b/g,'Math.E')}
+function num(s){try{return +new Function('return ('+js(s)+')')()}catch(e){return NaN}}
+function splitTop(s){let d=0;for(let i=0;i<s.length;i++){const c=s[i];if(c==='(')d++;else if(c===')')d--;else if(c===','&&d===0)return[s.slice(0,i),s.slice(i+1)]}return null}
+function parseDom(d,v){let lo=-Infinity,hi=Infinity,bad=false;
+  d.replace(/≤/g,'<=').replace(/≥/g,'>=').split(',').forEach(c=>{if(!c.trim())return;
+    const tk=c.split(/(<=|>=|<|>)/).map(s=>s.trim());
+    if(tk.length===5){const a=num(tk[0]),b=num(tk[4]);if(isNaN(a)||isNaN(b))bad=true;if(tk[1][0]==='<'){lo=a;hi=b}else{hi=a;lo=b}}
+    else if(tk.length===3){const L=tk[0]===v,val=num(L?tk[2]:tk[0]),lt=tk[1][0]==='<';if(isNaN(val))bad=true;if(L===lt)hi=val;else lo=val}
+    else bad=true});
+  return bad?null:{lo,hi}}
+function parse(text){
+  let t=text.trim();if(!t)return null;
+  let dom=null;const m=t.match(/\{([^}]*)\}/);if(m){dom=m[1];t=t.replace(m[0],'').trim()}
+  let kind='y',v='x',ex,mm,sp;
+  if(t[0]==='('&&t[t.length-1]===')'&&(sp=splitTop(t.slice(1,-1)))){kind='p';v='t';ex=sp}
+  else if(mm=t.match(/^x\s*=(.+)$/)){kind='x';v='y';ex=[mm[1]]}
+  else{mm=t.match(/^y\s*=(.+)$/);ex=[mm?mm[1]:t]}
+  let fns;try{fns=ex.map(e=>{const f=new Function(v,'a','b','c','return ('+js(e)+')');f(.5,1,1,1);return f})}catch(e){return{err:1}}
+  let lo=-Infinity,hi=Infinity;
+  if(dom!==null){const d=parseDom(dom,v);if(!d)return{err:1};lo=d.lo;hi=d.hi}
+  if(kind==='p'){if(lo===-Infinity)lo=0;if(hi===Infinity)hi=2*Math.PI}
+  return{kind,fns,lo,hi}}
+const ev=(p,u)=>{try{return p.fns[0](u,A,B,C)}catch(e){return NaN}};
+const der=(p,x)=>(ev(p,x+1e-4)-ev(p,x-1e-4))/2e-4;
+const fmtn=v=>(+v.toFixed(3)).toString().replace('-','−');
+
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const nice=px=>{const r=px/view.s,m=Math.pow(10,Math.floor(Math.log10(r))),n=r/m;return(n<=1?1:n<=2?2:n<=5?5:10)*m};
+function plot(p,col,frac,dash,deriv,X,Y,x0,x1,y0,y1){
+  let a=p.lo,b=p.hi;
+  if(p.kind==='y'){a=Math.max(a,x0);b=Math.min(b,x1)}else if(p.kind==='x'){a=Math.max(a,y0);b=Math.min(b,y1)}
+  if(!(b>a))return;
+  const N=p.kind==='p'?700:Math.min(1600,Math.ceil(VW*1.5)),m=Math.floor(frac*N);
+  ctx.strokeStyle=col;ctx.lineWidth=dash?2:3;ctx.lineCap='round';ctx.lineJoin='round';ctx.setLineDash(dash?[7,6]:[]);ctx.beginPath();let pen=false;
+  for(let j=0;j<=m;j++){const u=a+(b-a)*j/N;let x,y;
+    try{if(p.kind==='y'){x=u;y=deriv?der(p,u):p.fns[0](u,A,B,C)}else if(p.kind==='x'){y=u;x=p.fns[0](u,A,B,C)}else{x=p.fns[0](u,A,B,C);y=p.fns[1](u,A,B,C)}}catch(e){x=y=NaN}
+    if(!isFinite(x)||!isFinite(y)||Math.abs(Y(y))>1e5||Math.abs(X(x))>1e5){pen=false;continue}
+    pen?ctx.lineTo(X(x),Y(y)):ctx.moveTo(X(x),Y(y));pen=true}
+  ctx.stroke();ctx.setLineDash([])}
+function draw(){
+  const dpr=devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;if(!W||!H)return;VW=W;VH=H;
+  cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+  const s=view.s,X=x=>W/2+(x-view.cx)*s,Y=y=>H/2-(y-view.cy)*s;
+  const x0=view.cx-W/2/s,x1=view.cx+W/2/s,y0=view.cy-H/2/s,y1=view.cy+H/2/s,st=nice(56);
+  ctx.lineWidth=1;ctx.strokeStyle=css('--grid');ctx.beginPath();
+  for(let x=Math.ceil(x0/st)*st;x<=x1;x+=st){ctx.moveTo(X(x),0);ctx.lineTo(X(x),H)}
+  for(let y=Math.ceil(y0/st)*st;y<=y1;y+=st){ctx.moveTo(0,Y(y));ctx.lineTo(W,Y(y))}
+  ctx.stroke();ctx.strokeStyle=css('--axis');ctx.beginPath();
+  ctx.moveTo(0,Y(0));ctx.lineTo(W,Y(0));ctx.moveTo(X(0),0);ctx.lineTo(X(0),H);ctx.stroke();
+  ctx.fillStyle=css('--mute');ctx.font='11px system-ui,sans-serif';ctx.textAlign='center';
+  for(let x=Math.ceil(x0/st)*st;x<=x1;x+=st){if(Math.abs(x)<st/2)continue;ctx.fillText(fmtn(x),X(x),Math.min(H-4,Math.max(12,Y(0)+13)))}
+  ctx.textAlign='right';
+  for(let y=Math.ceil(y0/st)*st;y<=y1;y+=st){if(Math.abs(y)<st/2)continue;ctx.fillText(fmtn(y),Math.min(W-4,Math.max(28,X(0)-5)),Y(y)+4)}
+  const vis=rows.filter(r=>r.on&&r.p&&!r.p.err),n=vis.length;
+  vis.forEach((r,i)=>{const f=Math.max(0,Math.min(1,P*n-i));if(f>0)plot(r.p,r.color,f,false,false,X,Y,x0,x1,y0,y1)});
+  if(LS!==null){const L=LESSONS[LS],lv=$('live');lv.style.display='block';lv.innerHTML=L.live().filter(Boolean).map(x=>'<p>'+x+'</p>').join('');
+    if(P>=1)L.m().forEach(m=>{ctx.strokeStyle='#ff6b8b';ctx.fillStyle='#ff6b8b';ctx.lineWidth=1.5;
+      if(m.k==='v'||m.k==='h'){ctx.setLineDash([6,5]);ctx.beginPath();if(m.k==='v'){ctx.moveTo(X(m.x),0);ctx.lineTo(X(m.x),H)}else{ctx.moveTo(0,Y(m.y));ctx.lineTo(W,Y(m.y))}ctx.stroke();ctx.setLineDash([])}
+      else if(isFinite(m.x)&&isFinite(m.y)){ctx.beginPath();ctx.arc(X(m.x),Y(m.y),5,0,7);ctx.fill();ctx.fillStyle=css('--ink');ctx.font='bold 12px system-ui,sans-serif';ctx.textAlign='left';ctx.fillText('('+fmtn(m.x)+'; '+fmtn(m.y)+')',X(m.x)+8,Y(m.y)-8)}})}
+  const a=rows[active],ok=a&&a.on&&a.p&&!a.p.err&&a.p.kind==='y',ro=$('readout');
+  if(ok&&$('dchk').checked&&P>=1)plot(a.p,'#ff6b8b',1,true,true,X,Y,x0,x1,y0,y1);
+  ro.style.display='none';
+  if(ok&&trace!==null&&P>=1){const x=trace,y=ev(a.p,x);
+    if(isFinite(y)){const px=X(x),py=Y(y),d=der(a.p,x);
+      if($('dchk').checked&&isFinite(d)){ctx.strokeStyle='#ff6b8b';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(X(x-4),Y(y-4*d));ctx.lineTo(X(x+4),Y(y+4*d));ctx.stroke()}
+      ctx.fillStyle=a.color;ctx.beginPath();ctx.moveTo(px-8,py-3);ctx.lineTo(px-6,py-13);ctx.lineTo(px-1,py-6);ctx.moveTo(px+8,py-3);ctx.lineTo(px+6,py-13);ctx.lineTo(px+1,py-6);ctx.fill();
+      ctx.beginPath();ctx.arc(px,py,8,0,7);ctx.fill();ctx.fillStyle='#fff';
+      ctx.beginPath();ctx.arc(px-3,py-1,1.7,0,7);ctx.arc(px+3,py-1,1.7,0,7);ctx.fill();
+      ro.style.display='block';ro.textContent='x = '+fmtn(x)+'  y = '+fmtn(y)+(isFinite(d)?'  y′ = '+fmtn(d):'')}}
+  if(document.activeElement!==$('xmin'))$('xmin').value=+x0.toFixed(3);
+  if(document.activeElement!==$('xmax'))$('xmax').value=+x1.toFixed(3);
+  if(P>=1){clearTimeout(tm);tm=setTimeout(analyze,150)}}
+
+function analyze(){
+  const r=rows[active],o=$('ana');
+  if(!r||!r.p||r.p.err||r.p.kind!=='y'){o.innerHTML='<p>Bấm vào dòng của một hàm dạng y = f(x) để mình phân tích nhé 🐾</p>';return}
+  const p=r.p,f=x=>ev(p,x);
+  const xa=Math.max(p.lo,view.cx-VW/2/view.s),xb=Math.min(p.hi,view.cx+VW/2/view.s);
+  if(!(xb>xa)){o.innerHTML='<p>Hàm này không có điểm nào trong vùng đang xem.</p>';return}
+  const N=3000,h=(xb-xa)/N,ys=[];for(let i=0;i<=N;i++)ys.push(f(xa+i*h));
+  const gaps=[];let gs=null;
+  ys.forEach((y,i)=>{if(!isFinite(y)){if(gs===null)gs=i}else if(gs!==null){gaps.push([gs,i-1]);gs=null}});if(gs!==null)gaps.push([gs,N]);
+  const dom=gaps.length?'không xác định quanh x ≈ '+gaps.slice(0,3).map(g=>fmtn(xa+(g[0]+g[1])/2*h)).join('; '):'xác định trên cả vùng nhìn ['+fmtn(xa)+'; '+fmtn(xb)+']';
+  const roots=[];
+  for(let i=0;i<N;i++){const y1=ys[i],y2=ys[i+1];if(!isFinite(y1)||!isFinite(y2))continue;
+    if(y1===0)roots.push(xa+i*h);else if(y1*y2<0){let l=xa+i*h,u=l+h;for(let k=0;k<40;k++){const m=(l+u)/2;if(f(l)*f(m)<=0)u=m;else l=m}
+      const x=(l+u)/2;if(Math.abs(f(x))<1e-3)roots.push(x)}}
+  const mx=[],mn=[];
+  for(let i=1;i<N;i++){const a=ys[i-1],b=ys[i],c=ys[i+1];if(![a,b,c].every(isFinite)||Math.abs(b)>1e4)continue;
+    if(b>a&&b>=c)mx.push([xa+i*h,b]);else if(b<a&&b<=c)mn.push([xa+i*h,b])}
+  const pts=l=>l.slice(0,4).map(q=>'('+fmtn(q[0])+'; '+fmtn(q[1])+')').join(', ');
+  const y0=f(0);
+  o.innerHTML='<p><b>Tập xác định:</b> '+dom+'</p>'+(0>=xa&&0<=xb&&isFinite(y0)?'<p><b>Giao với Oy:</b> (0; '+fmtn(y0)+')</p>':'')+
+   '<p><b>Nghiệm gần đúng:</b> '+(roots.length?roots.slice(0,6).map(fmtn).join('; '):'không có trong vùng nhìn')+'</p>'+
+   '<p><b>Cực đại:</b> '+(mx.length?pts(mx):'không thấy')+'</p><p><b>Cực tiểu:</b> '+(mn.length?pts(mn):'không thấy')+'</p>'+
+   '<p style="color:var(--mute);font-size:.8rem">Kết quả gần đúng, chỉ xét trong khoảng X đang hiển thị.</p>'}
+
+function mkRow(i){const r=rows[i],d=document.createElement('div');
+  d.className='row'+(i===active?' act':'')+(r.p&&r.p.err?' bad':'');
+  d.innerHTML='<button class="n'+(r.on?'':' off')+'" style="--c:'+r.color+'" aria-label="Bật/tắt">'+(i+1)+'</button><input type="text" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="Nhập hàm số, ví dụ y = sin(x)"><button class="x" aria-label="Xóa">✕</button>';
+  d.querySelector('input').value=r.text;return d}
+function render(){list.innerHTML='';rows.forEach((_,i)=>list.appendChild(mkRow(i)))}
+function ensureEmpty(){const l=rows[rows.length-1];if(!l||l.text.trim()){rows.push({text:'',on:true,color:EXTRA[rows.length%EXTRA.length],p:null});list.appendChild(mkRow(rows.length-1))}}
+function setActive(i){active=i;[...list.children].forEach((d,k)=>d.classList.toggle('act',k===i))}
+const idx=e=>{const d=e.target.closest('.row');return d?[...list.children].indexOf(d):-1};
+list.addEventListener('input',e=>{const i=idx(e);if(i<0)return;const r=rows[i];clearLesson();r.text=e.target.value;r.p=parse(r.text);
+  list.children[i].classList.toggle('bad',!!(r.p&&r.p.err));setActive(i);ensureEmpty();P=1;draw()});
+list.addEventListener('focusin',e=>{const i=idx(e);if(i>=0&&i!==active){setActive(i);draw()}});
+list.addEventListener('click',e=>{const i=idx(e);if(i<0)return;
+  if(e.target.closest('.n')){rows[i].on=!rows[i].on;e.target.closest('.n').classList.toggle('off',!rows[i].on);P=1;draw()}
+  else if(e.target.closest('.x')){rows.splice(i,1);if(active>=rows.length)active=0;render();ensureEmpty();setActive(Math.min(active,rows.length-1));draw()}});
+function setRows(t,c){rows=t.map((x,i)=>({text:x,on:true,color:(c&&c[i])||PAL[i]||EXTRA[i%EXTRA.length],p:parse(x)}));active=0;trace=null;render();ensureEmpty();setActive(0)}
+function setView(w,cx,cy){view={cx,cy,s:VW/w}}
+function play(){cancelAnimationFrame(raf);
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){P=1;draw();return}
+  const t0=performance.now();(function step(now){P=Math.min(1,(now-t0)/6000);draw();if(P<1)raf=requestAnimationFrame(step)})(t0)}
+function say(t){$('say').textContent=t}
+const chips=$('chips');
+SAMPLES.forEach(s=>{const b=document.createElement('button');b.textContent=s[0];b.onclick=()=>{clearLesson();cancelAnimationFrame(raf);setRows(s[1],s[5]);P=1;draw();setView(s[2],s[3],s[4]);
+  if(s[0]==='Ranh Ma FC'){say('Nhân ngày 20/11, chúng em xin gửi đến thầy Thanh lời chúc ấm áp nhất: mong thầy luôn mạnh khỏe, bình an và tràn ngập những phút giây vui vẻ bên gia đình và người thân. Cảm ơn thầy đã tận tâm dẫn dắt lớp em trong suốt thời gian vừa qua. Mong thầy tiếp tục đồng hành cùng 12A5 đến hết năm học này, để chúng em có thêm thật nhiều kỷ niệm đẹp bên thầy ạ 💐');play()}
+  else if(s[0]==='Số 20/11'){say('Nhân ngày 20/11, chúng em xin gửi đến thầy Thanh lời chúc ấm áp nhất: mong thầy luôn mạnh khỏe, bình an và tràn ngập những phút giây vui vẻ bên gia đình và người thân. Cảm ơn thầy đã tận tâm dẫn dắt lớp em trong suốt thời gian vừa qua. Mong thầy tiếp tục đồng hành cùng 12A5 đến hết năm học này, để chúng em có thêm thật nhiều kỷ niệm đẹp bên thầy ạ 💐');play()}
+  else say(s[0]==='Trái tim'?'Meo! Trái tim bằng hàm số tham số đó 💗':'Meo! Mình vẽ '+s[0]+' xong rồi nè.');draw()};
+  if(s[0]==='Số 20/11'||s[0]==='Ranh Ma FC')b.className='pri';chips.appendChild(b)});
+$('zin').onclick=()=>{view.s*=1.3;draw()};$('zout').onclick=()=>{view.s/=1.3;draw()};
+$('fit').onclick=()=>{view.cx=0;view.cy=0;view.s=VW/16;draw()};
+$('setr').onclick=()=>{const a=+$('xmin').value,b=+$('xmax').value;if(b>a){view.cx=(a+b)/2;view.s=VW/(b-a);draw();say('Meo! Đã đổi khoảng nhìn rồi nè.')}else say('X nhỏ nhất phải nhỏ hơn X lớn nhất nha.')};
+$('dchk').onchange=draw;
+$('sa').oninput=()=>{A=+$('sa').value;$('va').textContent=A;P=1;draw()};
+$('sb').oninput=()=>{B=+$('sb').value;$('vb').textContent=B;P=1;draw()};
+$('sc').oninput=()=>{C=+$('sc').value;$('vc').textContent=C;P=1;draw()};
+$('anim').onclick=()=>{if(ar){cancelAnimationFrame(ar);ar=0;$('anim').textContent='▶ Cho a chạy';return}
+  $('anim').textContent='⏸ Dừng';(function s(ts){A=+(5*Math.sin(ts/900)).toFixed(2);$('sa').value=A;$('va').textContent=A;P=1;draw();ar=requestAnimationFrame(s)})(performance.now())};
+
+const ptrs=new Map();let lastD=0,moved=0;
+const xAt=e=>{const r=cv.getBoundingClientRect();return view.cx+(e.clientX-r.left-r.width/2)/view.s};
+cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);ptrs.set(e.pointerId,[e.clientX,e.clientY]);lastD=0;moved=0});
+cv.addEventListener('pointerup',e=>{if(ptrs.size===1&&moved<5){trace=xAt(e);P=1;draw()}ptrs.delete(e.pointerId)});
+cv.addEventListener('pointercancel',e=>ptrs.delete(e.pointerId));
+cv.addEventListener('pointermove',e=>{
+  if(!ptrs.has(e.pointerId)){if(e.pointerType==='mouse'){trace=xAt(e);draw()}return}
+  const o=ptrs.get(e.pointerId);ptrs.set(e.pointerId,[e.clientX,e.clientY]);
+  if(ptrs.size===1){moved+=Math.abs(e.clientX-o[0])+Math.abs(e.clientY-o[1]);view.cx-=(e.clientX-o[0])/view.s;view.cy+=(e.clientY-o[1])/view.s}
+  else if(ptrs.size===2){moved=99;const[a,b]=[...ptrs.values()],d=Math.hypot(a[0]-b[0],a[1]-b[1]);if(lastD)view.s=Math.max(2,Math.min(4000,view.s*d/lastD));lastD=d}
+  draw()});
+cv.addEventListener('wheel',e=>{e.preventDefault();const r=cv.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
+  const wx=view.cx+(mx-r.width/2)/view.s,wy=view.cy-(my-r.height/2)/view.s;
+  view.s=Math.max(2,Math.min(4000,view.s*Math.exp(-e.deltaY*.0015)));
+  view.cx=wx-(mx-r.width/2)/view.s;view.cy=wy+(my-r.height/2)/view.s;draw()},{passive:false});
+const pt=(x,y)=>({k:'p',x,y}),vx=x=>({k:'v',x}),hy=y=>({k:'h',y});
+const sg=(v,p,n,z)=>v>0?p:v<0?n:(z||'');
+const LESSONS=[
+{n:'Bậc nhất',f:'y=a*x+b',g:'y = ax + b',v:[12,0,0],p:[2,1,0],
+ t:['Đồ thị là một đường thẳng.','a là hệ số góc: a > 0 thì đồ thị đi lên (hàm đồng biến), a < 0 thì đi xuống (nghịch biến).','b là tung độ gốc: đường thẳng cắt trục Oy tại (0; b).'],
+ live:()=>[sg(A,'a > 0: hàm đồng biến, đồ thị đi lên','a < 0: hàm nghịch biến, đồ thị đi xuống','a = 0: đồ thị là đường ngang y = '+fmtn(B)),'Cắt Oy tại (0; '+fmtn(B)+')',A?'Cắt Ox tại ('+fmtn(-B/A)+'; 0)':''],
+ m:()=>A?[pt(-B/A,0),pt(0,B)]:[pt(0,B)]},
+{n:'Bậc hai',f:'y=a*x^2+b*x+c',g:'y = ax² + bx + c',v:[12,1,1],p:[1,-4,3],
+ t:['Đồ thị là một parabol, đối xứng qua đường thẳng đi qua đỉnh.','a > 0: parabol mở lên, đỉnh là điểm thấp nhất. a < 0: mở xuống, đỉnh là điểm cao nhất.','Δ = b² − 4ac cho biết số giao điểm với trục Ox: Δ > 0 có hai điểm, Δ = 0 có một điểm, Δ < 0 không có.'],
+ live:()=>{if(!A)return['a = 0: không còn là hàm bậc hai'];const D=+(B*B-4*A*C).toFixed(6);return[sg(A,'a > 0: parabol mở lên','a < 0: parabol mở xuống'),'Δ = '+fmtn(D)+(D>0?' > 0: cắt Ox tại 2 điểm':D===0?': tiếp xúc Ox tại 1 điểm':' < 0: không cắt Ox'),'Đỉnh ('+fmtn(-B/(2*A))+'; '+fmtn(-D/(4*A))+')']},
+ m:()=>{if(!A)return[];const D=+(B*B-4*A*C).toFixed(6),r=[pt(-B/(2*A),-D/(4*A)),vx(-B/(2*A))];if(D>=0){const q=Math.sqrt(D);r.push(pt((-B+q)/(2*A),0),pt((-B-q)/(2*A),0))}return r}},
+{n:'Bậc ba',f:'y=a*x^3+b*x^2+c*x',g:'y = ax³ + bx² + cx',v:[10,1,0],p:[1,-3,0],
+ t:['Đồ thị hình chữ S (bài này lấy hệ số tự do bằng 0 nên đồ thị đi qua gốc O).','Cực trị là nơi đồ thị đổi chiều, là nghiệm của đạo hàm y′ = 3ax² + 2bx + c.','Nếu Δ′ = 4b² − 12ac > 0 thì hàm có 2 cực trị, ngược lại hàm chỉ đi một chiều.'],
+ live:()=>{if(!A)return['a = 0: không còn là hàm bậc ba'];const D=+(4*B*B-12*A*C).toFixed(6);return[sg(A,'a > 0: nhìn từ trái sang phải, đồ thị đi lên','a < 0: nhìn từ trái sang phải, đồ thị đi xuống'),'Δ′ = '+fmtn(D)+(D>0?' > 0: có 2 điểm cực trị':' ≤ 0: không có cực trị')]},
+ m:()=>{if(!A)return[];const D=4*B*B-12*A*C;if(D<=0)return[];const q=Math.sqrt(D),f=x=>A*x**3+B*x*x+C*x;return[(-2*B+q)/(6*A),(-2*B-q)/(6*A)].map(x=>pt(x,f(x)))}},
+{n:'Phân thức',f:'y=a/(x-b)+c',g:'y = a/(x − b) + c',v:[14,1,1],p:[1,1,1],
+ t:['Đồ thị là hai nhánh hyperbol, không bao giờ chạm các đường tiệm cận.','Tiệm cận đứng x = b (hàm không xác định tại đây) và tiệm cận ngang y = c.','Hai đường tiệm cận cắt nhau tại (b; c), đó là tâm đối xứng của đồ thị.'],
+ live:()=>A?['Tiệm cận đứng: x = '+fmtn(B),'Tiệm cận ngang: y = '+fmtn(C),sg(A,'a > 0: hàm nghịch biến trên từng khoảng','a < 0: hàm đồng biến trên từng khoảng'),C?'Cắt Ox tại ('+fmtn(B-A/C)+'; 0)':'']:['a = 0: đồ thị trở thành đường ngang y = '+fmtn(C)],
+ m:()=>A?[vx(B),hy(C),pt(B,C)]:[]},
+{n:'Căn thức',f:'y=a*sqrt(x-b)+c',g:'y = a·√(x − b) + c',v:[12,4,2],p:[1,1,0],
+ t:['Đồ thị là một nửa parabol nằm ngang, chỉ có khi biểu thức trong căn không âm.','Tập xác định: x ≥ b. Điểm bắt đầu của đồ thị là (b; c).','a > 0: đồ thị đi lên (đồng biến). a < 0: đi xuống (nghịch biến).'],
+ live:()=>['Tập xác định: x ≥ '+fmtn(B),'Điểm bắt đầu: ('+fmtn(B)+'; '+fmtn(C)+')',sg(A,'a > 0: hàm đồng biến','a < 0: hàm nghịch biến','a = 0: đồ thị là một nửa đường ngang')],
+ m:()=>[pt(B,C),vx(B)]},
+{n:'Trị tuyệt đối',f:'y=a*abs(x-b)+c',g:'y = a·|x − b| + c',v:[12,0,1.5],p:[1,0,0],
+ t:['Đồ thị hình chữ V (hoặc chữ Λ), đối xứng qua đường thẳng x = b.','Đỉnh của đồ thị là (b; c).','a > 0: chữ V mở lên, c là giá trị nhỏ nhất. a < 0: mở xuống, c là giá trị lớn nhất.'],
+ live:()=>['Đỉnh ('+fmtn(B)+'; '+fmtn(C)+')',sg(A,'a > 0: mở lên, giá trị nhỏ nhất bằng '+fmtn(C),'a < 0: mở xuống, giá trị lớn nhất bằng '+fmtn(C),'a = 0: đồ thị là đường ngang y = '+fmtn(C))],
+ m:()=>[pt(B,C),vx(B)]},
+{n:'Sin(x)',f:'y=a*sin(b*x)+c',g:'y = a·sin(bx) + c',v:[14,0,0],p:[1,1,0],
+ t:['Đồ thị là sóng lặp đi lặp lại, mượt và đều.','|a| là biên độ (độ cao của sóng). b quyết định chu kỳ T = 2π / |b|: b càng lớn thì sóng càng dày.','c dịch cả đồ thị lên xuống, đường trung bình là y = c.'],
+ live:()=>['Biên độ: '+fmtn(Math.abs(A)),B?'Chu kỳ T = 2π/|b| ≈ '+fmtn(2*Math.PI/Math.abs(B)):'b = 0: đồ thị là đường ngang','Lớn nhất = '+fmtn(C+Math.abs(A))+', nhỏ nhất = '+fmtn(C-Math.abs(A))],
+ m:()=>[hy(C),hy(C+Math.abs(A)),hy(C-Math.abs(A))]},
+{n:'Hàm mũ',f:'y=exp(a*x)+c',g:'y = e^(ax) + c',v:[10,0,2],p:[1,0,0],
+ t:['Đồ thị tăng hoặc giảm rất nhanh nhưng luôn nằm một phía của đường tiệm cận ngang y = c (bài này chỉ dùng a và c).','a > 0: hàm đồng biến, tăng nhanh về bên phải. a < 0: hàm nghịch biến.','Đồ thị luôn đi qua điểm (0; 1 + c).'],
+ live:()=>[sg(A,'a > 0: hàm đồng biến','a < 0: hàm nghịch biến','a = 0: hàm hằng y = '+fmtn(1+C)),'Tiệm cận ngang: y = '+fmtn(C),'Đi qua (0; '+fmtn(1+C)+')'],
+ m:()=>[hy(C),pt(0,1+C)]},
+{n:'Logarit',f:'y=a*ln(x-b)+c',g:'y = a·ln(x − b) + c',v:[12,3,0],p:[1,0,0],
+ t:['Đồ thị chỉ có ở bên phải đường tiệm cận đứng x = b, vì chỉ lấy logarit của số dương.','Tập xác định: x > b. Khi a > 0 đồ thị đi lên nhưng chậm dần.','Đồ thị cắt trục Ox tại x = b + e^(−c/a).'],
+ live:()=>A?['Tập xác định: x > '+fmtn(B),'Tiệm cận đứng: x = '+fmtn(B),sg(A,'a > 0: hàm đồng biến','a < 0: hàm nghịch biến'),'Cắt Ox tại ('+fmtn(B+Math.exp(-C/A))+'; 0)']:['a = 0: không còn là hàm logarit'],
+ m:()=>A?[vx(B),pt(B+Math.exp(-C/A),0)]:[vx(B)]}];
+const lch=$('lchips');
+LESSONS.forEach((L,i)=>{const b=document.createElement('button');b.textContent=L.n;b.onclick=()=>openLesson(i);lch.appendChild(b)});
+function clearLesson(){LS=null;[...lch.children].forEach(b=>b.classList.remove('on'));$('live').style.display='none';
+  $('lbody').innerHTML='<p class="tip">Chọn một bài học để xem đồ thị, lời giải thích và các đặc điểm thay đổi theo thanh trượt.</p>'}
+function openLesson(i){
+  const L=LESSONS[i];cancelAnimationFrame(raf);LS=i;trace=null;
+  [A,B,C]=L.p;['a','b','c'].forEach((k,j)=>{$('s'+k).value=L.p[j];$('v'+k).textContent=L.p[j]});
+  setRows([L.f]);P=1;setView(L.v[0],L.v[1],L.v[2]);
+  [...lch.children].forEach((b,k)=>b.classList.toggle('on',k===i));
+  $('lbody').innerHTML='<div class="formula">'+L.g+'</div><ul>'+L.t.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+  say('Meo! Kéo thanh trượt a, b, c để xem đồ thị '+L.n.toLowerCase()+' thay đổi nè 🐾');draw()}
+addEventListener('resize',draw);
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change',draw);
+setRows(PRESET);VW=cv.clientWidth||600;setView(19,-.5,2.5);say('Nhân ngày 20/11, chúng em xin gửi đến thầy Thanh lời chúc ấm áp nhất: mong thầy luôn mạnh khỏe, bình an và tràn ngập những phút giây vui vẻ bên gia đình và người thân. Cảm ơn thầy đã tận tâm dẫn dắt lớp em trong suốt thời gian vừa qua. Mong thầy tiếp tục đồng hành cùng 12A5 đến hết năm học này, để chúng em có thêm thật nhiều kỷ niệm đẹp bên thầy ạ 💐');play();
+</script>
+</body>
+</html>
